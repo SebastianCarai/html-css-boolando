@@ -1,0 +1,105 @@
+/* RESET */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+/* GENERAL */
+body{
+    font-family: Arial;
+}
+.container{
+    width: 80%;
+    margin: auto;
+    margin-top: 1.5%;
+}
+.row{
+    text-align: center;
+    margin-bottom: 5%;
+}
+
+
+/* ITEM */
+.item{
+    display: inline-block;
+    width: 30%;
+    padding: 0 10px;
+}
+
+/* Photo + Discount */
+.image-container{
+    position: relative;
+}
+.image-container img{
+    width: 100%;
+}
+.base{
+    display:block
+}
+.hover{
+    display: none;
+}
+
+.discount{
+    position: absolute;
+    left: 0;
+    bottom: 5%;
+}
+.discount span{
+    color: white;
+    font-size: 13px;
+    font-weight: 800;
+    padding: 5px;
+    border-radius: 15px;
+}
+.discount-value{
+    background-color: #eb0037;
+    margin-right: 5px;
+}
+.sostenibilità{
+    background-color: #00875a;
+}
+
+.heart{
+    position: absolute;
+    background-color: white;
+    font-size: 25px;
+    padding: 9px 14px;
+    right: 0;
+    top: 5%;
+}
+
+/* Product Description */
+.description{
+    text-align: left;
+    padding-top: 10px;
+}
+.brand{
+    font-size: 14px;
+}
+.product-name{
+    font-weight: bold;
+}
+.product-discounted-price{
+    color: #ff0000;
+    font-weight: 600;
+    font-size: 15px;
+}
+.product-initial-price{
+    text-decoration: line-through;
+    font-size: 15px;
+}
+
+
+
+/* HOVER */
+.image-container:hover .base{
+    display: none;
+}
+.image-container:hover .hover{
+    display: block;
+}
+
